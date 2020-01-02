@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Orbitron:400,500,900,700);
+body {
+  background-image: url('https://risibank.fr/cache/stickers/d737/73704-full.jpg');
+  font-family: 'Orbitron', sans-serif;
+}
+
+h2 {
+  color: darkred;
+  text-align: center;
+  font-size: 3em;
+}
+
+h3 {
+color: darkred;
+text-align: center;
+font-size: 2em;}
+
+h4 {
+color: white;
+z-index: 1;}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #000;
+  border-radius: 50%;
+  margin-left: 540px;
+  margin-top: 220px;
+  width: 120px;
+  height: 120px;    
+  animation: spin 0.7s linear infinite;
+    position: absolute;
+  z-index: 10;
+  
+}
+
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#character-container {
+  padding: 10px;
+  width: 1500px;
+  height: 800px;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+#descriptionlesquen {
+ border-width:6px;
+ border-style:dotted;
+ border-color:darkred;
+ position: relative;
+ margin-left: 330px;
+ margin-right: 100px;
+ margin-top: 20px;
+ }
+#descriptionjawa {
+ border-width:6px;
+ border-style:dotted;
+ border-color:darkred;
+ position: relative;
+ margin-left: 330px;
+ margin-right: 100px;
+ margin-top: 20px;
+ }
+
+#descriptionrisitas {
+ border-width:6px;
+ border-style:dotted;
+ border-color:darkred;
+ position: relative;
+ margin-left: 330px;
+ margin-right: 100px;
+ margin-top: 20px;
+ }
+
+#descriptionsardoche {
+ border-width:6px;
+ border-style:dotted;
+ border-color:darkred;
+ position: relative;
+ margin-left: 330px;
+ margin-right: 100px;
+ margin-top: 20px;
+ }
+
+
+#character-box {
+  width: 300px;
+  height: 370px;
+  float: left;
+  border-radius: 5px;
+  border:5px solid darkred;
+  background-color: white;
+  background-image: url('https://i1.wp.com/cfs10.blog.daum.net/image/23/blog/2008/01/10/17/54/4785dd38375e0&filename=%EF%BC%9F.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  margin-right: 30px;
+}
+
+#character-container img {
+  height: 150px;
+  width: 100px;
+  border: 6px groove darkred;
+  padding: 10px;
+  margin: 2.5px;
+  background-color: white;
+}
+
+#character-container img:hover {
+  border-color: blue;
+  box-shadow: 0 0 5px blue;
+}
+
+#continue {
+text-align: center}
