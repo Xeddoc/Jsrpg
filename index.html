@@ -4,11 +4,13 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="scriptmenu.js"></script>
 <body>
+<div id="page1">
 <div id="character-container">
   <h2>Selection du personnage</h2>
   <div id="character-box"></div>
 <div id='loader' class='loader' style="display: none" ></div>
 <audio id="select" src="select.wav"></audio>
+<audio id="reveil" src="reveil.wav"></audio>
 
 <img src="https://risibank.fr/cache/stickers/d84/8427-full.jpg" onclick="lesquen()">
 
@@ -18,17 +20,18 @@
 
 <img src="https://risibank.fr/cache/stickers/d1578/157805-full.png" onclick="sardoche()">  
 <div id="descriptionlesquen" style="display: none">
-<h3>Henry de Lesquen</h3>
-<h4>Préparé pour sa croisade, le chevalier Henry utilise une épée en acier mais utilisez sa capacité "Menteur, Pharysien" pour vous sortir d'une impasse car il arrive que tout chevalier se retrouve à terre.</h4>
+<h3>HENRY DE LESQUEN</h3>
+<h4>Préparé pour sa croisade, le chevalier Henry utilise une épée en acier. 
+Utilisez sa capacité spéciale "Menteur, Pharisien" pour vous sortir d'une impasse car il arrive que tout chevalier se retrouve à terre.</h4>
 </div>
 
 <div id="descriptionjawa" style="display: none">
-<h3>Jawa</h3>
+<h3>JAWA</h3>
 <h4>Peu bagarreur mais se défend avec son canon ionique paralysant. Utini est sa capacité spéciale.</h4>
 </div>
 
 <div id="descriptionrisitas" style="display: none">
-<h3>Risitas</h3>
+<h3>RISITAS</h3>
 <h4>Issou, sainte Chancla et Yatangaki Punch sont des atouts sur lesquels il peut compter.</h4>
 </div>
 
@@ -41,13 +44,38 @@
 
            
 <div id="continue" style="display: none">
-<h4>Continuer avec ce personnage</h4>
+<h4 onclick="test()" style="cursor: pointer">Continuer avec ce personnage</h4>
 </div>
 
 
 </div>    
+</div>
+
+<div id="pagejeu" style="display: none">
+<h2 style="position: absolute; z-index: 10; margin-left: 650px;">Votre réveil sonne.</h2>
+<!--<p id="charaname"></p> -->
 
 
+
+
+</div>
+<div id="lever" style="display: none;">
+<button style="margin-top: 500px; margin-left: 900px;  cursor: pointer;"  onclick="changefond()">Se lever</button>
+</div>
+
+
+<div id="citation" style="display: none;">
+<!--<h2 style="color: red; margin-top: 600px;">Les héros vivent à travers leurs victoires mais naissent de leurs échecs.</h2> -->
+<div id="dialog"></div>
+
+<audio id="sirene" src="sirene.wav"></audio>
+
+<div id="choix1" style="display: none;">
+<button id="sortir" onclick="sortir()">Aller voir ce qu'il se passe dehors.</button>
+
+<button id="rester" onclick="rester()">Rester à l'interieur et vérifier les actualités.</button>
+</div>
+</div>
 </body>
     
 </html>

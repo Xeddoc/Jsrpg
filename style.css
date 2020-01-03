@@ -2,6 +2,7 @@
 body {
   background-image: url('https://risibank.fr/cache/stickers/d737/73704-full.jpg');
   font-family: 'Orbitron', sans-serif;
+  background-size: cover;
 }
 
 h2 {
@@ -106,7 +107,7 @@ z-index: 1;}
 
 #character-container img {
   height: 150px;
-  width: 100px;
+  width: 150px;
   border: 6px groove darkred;
   padding: 10px;
   margin: 2.5px;
@@ -119,4 +120,33 @@ z-index: 1;}
 }
 
 #continue {
-text-align: center}
+text-align: center
+}
+
+
+
+
+
+
+
+#dialog {
+  height: 90px;
+  background: #1c1c1c;
+  border-radius: 5px;
+  box-shadow: 0 0 0 6px #F5EAC8, 0 0 0 12px #251C00;
+  color: #F5EAC8;
+  font-family: Arial;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px 20px 20px 20px;
+  position: relative;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  width: 700px;
+}
+
+
+#choix1 {
+margin-top: 400px;
+margin-left: 600px;}
+
