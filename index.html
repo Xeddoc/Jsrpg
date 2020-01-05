@@ -12,13 +12,13 @@
 <audio id="select" src="select.wav"></audio>
 <audio id="reveil" src="reveil.wav"></audio>
 
-<img src="https://risibank.fr/cache/stickers/d84/8427-full.jpg" onclick="lesquen()">
+<img src="https://risibank.fr/cache/stickers/d84/8427-full.jpg" onclick="lesquen()" style="cursor: pointer">
 
-<img src="https://images-na.ssl-images-amazon.com/images/I/91LGV9QfnuL._SY550_.jpg" onclick="jawa()">
+<img src="https://images-na.ssl-images-amazon.com/images/I/91LGV9QfnuL._SY550_.jpg" onclick="jawa()" style="cursor: pointer">
     
-<img src="https://risibank.fr/cache/stickers/d5/570-full.jpg" onclick="risitas()">
+<img src="https://risibank.fr/cache/stickers/d5/570-full.jpg" onclick="risitas()" style="cursor: pointer">
 
-<img src="https://risibank.fr/cache/stickers/d1578/157805-full.png" onclick="sardoche()">  
+<img src="https://risibank.fr/cache/stickers/d1578/157805-full.png" onclick="sardoche()" style="cursor: pointer">  
 <div id="descriptionlesquen" style="display: none">
 <h3>HENRY DE LESQUEN</h3>
 <h4>Préparé pour sa croisade, le chevalier Henry utilise une épée en acier. 
@@ -32,7 +32,7 @@ Utilisez sa capacité spéciale "Menteur, Pharisien" pour vous sortir d'une impa
 
 <div id="descriptionrisitas" style="display: none">
 <h3>RISITAS</h3>
-<h4>Issou, sainte Chancla et Yatangaki Punch sont des atouts sur lesquels il peut compter.</h4>
+<h4>Issou Punch, sainte Chancla et Décapitation Yatangaki sont des atouts sur lesquels il peut compter.</h4>
 </div>
 
 <div id="descriptionsardoche" style="display: none">
@@ -71,11 +71,49 @@ Utilisez sa capacité spéciale "Menteur, Pharisien" pour vous sortir d'une impa
 <audio id="sirene" src="sirene.wav"></audio>
 
 <div id="choix1" style="display: none;">
-<button id="sortir" onclick="sortir()">Aller voir ce qu'il se passe dehors.</button>
+<button id="sortir" onclick="sortir()" style="cursor: pointer">Aller voir ce qu'il se passe dehors.</button>
 
-<button id="rester" onclick="rester()">Rester à l'interieur et vérifier les actualités.</button>
+<button id="rester" onclick="rester()" style="cursor: pointer">Rester à l'interieur et vérifier les actualités.</button>
 </div>
 </div>
+
+
+<!-- CHOIX SORTIR -->
+<div id="attaque" style="display: none;">
+<div id="dialog2"></div>
+<div id="choix2">
+<button id="aide" onclick="help()">Venir en aide au policier</button> 
+<button id="fuir" onclick="distraire()">Distraire l'attaquant avec le pavé MMA</button>
+</div>
+</div>
+
+
+
+<!-- AIDER -->
+<div id="adversaire" style="display: none">
+<progress id="advhealth" value="100" max="100"></progress>
+<img id="imgadv" src="hooded.png"> 
+<div id="attaques" style="display: none">
+<button id="spe" onclick="specialattackfail()" style="cursor: pointer">Ultimate Dangereux : Décapitation Yatangaki</button>
+<button id="simple" onclick="simpleattack()" style="cursor: pointer">Attaque Simple : Issou Punch</button></div> 
+<div id="myhealth" style="text-align: right">
+<progress id="health" value="20" max = "100"></progress>
+<div id="dialog4" style="display: none"></div>
+<div id="dialog5" style="display: none"></div>
+</div>
+</div>
+
+
+
+<!-- CHOIX RESTER -->
+<div id="tv" style="display: none;">
+<div id="dialog3"></div>
+<div id="choix3" style="display: none">
+<button id="aide2" onclick="help()">Venir en aide au policier</button>
+<button id="barricade" onclick="barricader()">Se barricader</button>  
+</div>
+</div>
+
 </body>
     
 </html>

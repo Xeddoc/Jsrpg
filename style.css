@@ -145,8 +145,104 @@ text-align: center
   width: 700px;
 }
 
+#dialog2 {
+  height: 90px;
+  background: #1c1c1c;
+  border-radius: 5px;
+  box-shadow: 0 0 0 6px #F5EAC8, 0 0 0 12px #251C00;
+  color: #F5EAC8;
+  font-family: Arial;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px 20px 20px 20px;
+  position: relative;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  width: 700px;
+}
+
+#dialog3 {
+  height: 150px;
+  background: #1c1c1c;
+  border-radius: 5px;
+  box-shadow: 0 0 0 6px #F5EAC8, 0 0 0 12px #251C00;
+  color: #F5EAC8;
+  font-family: Arial;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px 20px 20px 20px;
+  position: relative;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  width: 700px;
+  margin-top: 700px;
+}
+
+#dialog4 {
+  height: 90px;
+  background: #1c1c1c;
+  border-radius: 5px;
+  box-shadow: 0 0 0 6px #F5EAC8, 0 0 0 12px #251C00;
+  color: #F5EAC8;
+  font-family: Arial;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px 20px 20px 20px;
+  position: relative;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  width: 700px;
+}
+
+#dialog5 {
+  height: 90px;
+  background: #1c1c1c;
+  border-radius: 5px;
+  box-shadow: 0 0 0 6px #F5EAC8, 0 0 0 12px #251C00;
+  color: #F5EAC8;
+  font-family: Arial;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px 20px 20px 20px;
+  position: relative;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  width: 700px;
+}
+
+
+#imgadv {
+width: 700px;}
+
+#advhealth {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 600px;
+    background-color: brown;
+}
+
+#health {
+margin-right: 400px;
+}
+
+#adversaire {
+margin-top: 200px
+}
+
+#attaques {
+margin-left: 1300px;
+margin-top: -300px;
+}
+
 
 #choix1 {
 margin-top: 400px;
-margin-left: 600px;}
+margin-left: 800px;}
 
+#choix2 {
+margin-top: 400px;
+margin-left: 800px;}
+
+#choix3 {
+margin-left: 800px;
+}
