@@ -538,6 +538,9 @@ function saintechancla() {
 
     $("#chancla").show(100);
     $("#finalbutton").show(100);
+    $("#hood").fadeOut(100);
+    $("#finencours2").fadeOut(100);
+    $("#specialfin").fadeOut(100);
     
     let dialogs = ['Le sans visage est projeté au sol, ses points de vie sont réduits à 0, mais il semble se relever.'],  
             initial = 0;
@@ -571,7 +574,7 @@ function fin() {
     document.body.style.backgroundImage='url("hop5.jpg")' 
     $("#finalbutton").fadeOut(100);
     $("#chancla").fadeOut(100);
-    $("#hooded").fadeOut(100);
+    $("#hood").fadeOut(100);
     $("#finencours2").fadeOut(100);
     $("#specialfin").fadeOut(100);
     $("#visage").show(2000);
