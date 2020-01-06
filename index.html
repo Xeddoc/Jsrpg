@@ -11,6 +11,7 @@
 <div id='loader' class='loader' style="display: none" ></div>
 <audio id="select" src="select.wav"></audio>
 <audio id="reveil" src="reveil.wav"></audio>
+<audio id="yatangaki" src="Yatangaki.wav"></audio>
 
 <img src="https://risibank.fr/cache/stickers/d84/8427-full.jpg" onclick="lesquen()" style="cursor: pointer">
 
@@ -82,8 +83,8 @@ Utilisez sa capacité spéciale "Menteur, Pharisien" pour vous sortir d'une impa
 <div id="attaque" style="display: none;">
 <div id="dialog2"></div>
 <div id="choix2">
-<button id="aide" onclick="help()">Venir en aide au policier</button> 
-<button id="fuir" onclick="distraire()">Distraire l'attaquant avec le pavé MMA</button>
+<button id="aide" onclick="help()" style="cursor: pointer">Venir en aide au policier</button> 
+<button id="fuir" onclick="distraire()" style="cursor: pointer">Distraire l'attaquant avec le pavé MMA</button>
 </div>
 </div>
 
@@ -91,10 +92,11 @@ Utilisez sa capacité spéciale "Menteur, Pharisien" pour vous sortir d'une impa
 
 <!-- AIDER -->
 <div id="adversaire" style="display: none">
+<audio id="issou" src="issou.wav"></audio>
 <progress id="advhealth" value="100" max="100"></progress>
 <img id="imgadv" src="hooded.png"> 
 <div id="attaques" style="display: none">
-<button id="spe" onclick="specialattackfail()" style="cursor: pointer">Ultimate Dangereux : Décapitation Yatangaki</button>
+<button id="spe" onclick="specialattackfail()" style="cursor: pointer">Ultimate (Dangereux) : Décapitation Yatangaki</button>
 <button id="simple" onclick="simpleattack()" style="cursor: pointer">Attaque Simple : Issou Punch</button></div> 
 <div id="myhealth" style="text-align: right">
 <progress id="health" value="20" max = "100"></progress>
@@ -103,16 +105,110 @@ Utilisez sa capacité spéciale "Menteur, Pharisien" pour vous sortir d'une impa
 </div>
 </div>
 
+<!-- CHOIX DISTRAIRE -->
+<div id="dialogmma" style="display: none"></div>
+<div id="choixmma" style="display: none">
+<button onclick="continuer()" style="cursor: pointer">Continuer</button> </div>
 
+<!-- CHOIX CONTINUER -->
+<div id="dialog9" style="display: none"></div>
+<img id="larrypolice" src="policier.png" style="display: none">
+<div id="continue2" style="display: none">
+<button id="avancer" onclick="avance()" style="cursor: pointer">Avancer dans la rue</button>
+</div>
+
+<!-- CHOIX AVANCER RUELLE -->
+
+<div id="dialogruelle" style="display: none"></div>
+<div id="choixinter" style="display: none">
+<button id="parking" onclick="park()" style="cursor: pointer">Prendre sa voiture pour faire un constat de la situation en ville</button>
+<button id="retour" onclick="retour()" style="cursor: pointer">retourner sur ses pas</button>
+</div>
+
+
+<!-- RETOUR SUR SES PAS -->
+
+<div id="gameover2" style="display: none">
+</div>
+<button id="gameov2" onclick="tryagain()" style="display: none; margin-left: 900px;">Rejouer</button>
+
+<!-- PARKING -->
+<div id="dialogparking" style="display: none"></div>
+<div id="choixpark" style="display: none">
+<button id="carjack" onclick="carjack()" style="cursor: pointer">Essayer de voler un magnifique HUMMER ROUGER, UN HUMMER ROUGE BORDEL</button>
+<button id="etage" onclick="etage()" style="cursor: pointer">Vous avez pu vous tromper d'étage, descendre</button>
+</div>
+
+
+<!-- HUMMER ROUGE -->
+<img id="hummer" src="hummer.png" style="display: none">
+<div id="hummerrouge" style="display: none"></div>
+
+<!-- ETAGE -->
+<div id="assomme" style="display: none"></div>
+<button id="lit" style="display: none" onclick="simpleattack()">Continuer</button>
 
 <!-- CHOIX RESTER -->
 <div id="tv" style="display: none;">
 <div id="dialog3"></div>
 <div id="choix3" style="display: none">
-<button id="aide2" onclick="help()">Venir en aide au policier</button>
-<button id="barricade" onclick="barricader()">Se barricader</button>  
+<button id="aide2" onclick="help()" style="cursor: pointer">Venir en aide au policier</button>
+<button id="barricade" onclick="barricader()" style="cursor: pointer">Se barricader</button>  
 </div>
 </div>
+
+<!-- BARRICADER -->
+<div id="gameover1" style="display: none">
+</div>
+<button id="gameov" onclick="tryagain()" style="display: none; margin-left: 900px;">Rejouer</button>
+
+<!-- HOPITAL -->
+<div id="choix4" style="display: none">
+<button id="partir" onclick="partir()" style="cursor: pointer">Fuir la chambre d'hopital</button>
+<button id="repondre" onclick="repondre()" style="cursor: pointer">Demander où je suis</button>
+</div>
+
+
+<!-- CONVERSATION DOCTEUR -->
+
+<div id="dialogdoc" style="display: none"></div>
+
+
+<!-- COULOIR HOPITAL -->
+<div id="hosto" style="display: none;">
+<div id="dialog7"></div>
+<div id="choix5">
+<button id="porterarm" onclick="porterarm()" style="cursor: pointer">Enfiler l'armure</button>
+<button id="sansarm" onclick="sansarm()" style="cursor: pointer">Pas besoin d'armure et d'épée, continuer sans</button>  
+</div>
+<img src="armour.png" id="armour">
+</div>
+
+
+<!-- COMBAT -->
+
+<div id="sortie" style="display: none">
+    <progress id="adv2health" value="100" max="100"></progress>
+    <img src="adv.png" id="adv"> 
+    <div id="dialog8"></div>
+    <div id="attaques">
+    <button id="spe" onclick="specialattack()" style="cursor: pointer">Ultimate : Décapitation Yatangaki</button>
+    <button id="simple" onclick="attack()" style="cursor: pointer">Attaque Simple : Issou Punch</button></div> 
+    <div id="myfhealth" style="text-align: right">
+    <progress id="myfinalhealth" value="100" max = "100"></progress>
+</div>
+</div>
+
+<img src="special.png" style="display: none" id="special">
+
+<!-- VERS LA FIN -->
+<div id="dialog10" style="display: none"></div>
+<button id="versfin" onclick="versfin()" style="cursor: pointer; display: none;">Continuer son avancée</button>
+
+<img src="hooded.png" style="display: none; margin-left: 500px; margin-top: 500px; width: 500px;" id="hook"> 
+
+
+
 
 </body>
     
