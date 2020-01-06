@@ -1398,6 +1398,7 @@ function continuefin() {
      $('#lastdialog').show();
      $('#visage').fadeOut();
      $('#finaldialog').fadeOut();
+     $('#continuefin').fadeOut();
 document.body.style.backgroundImage='url("reveil.png")';
 
 let audio = document.getElementById("reveil");
