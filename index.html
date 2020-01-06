@@ -12,6 +12,7 @@
 <audio id="select" src="select.wav"></audio>
 <audio id="reveil" src="reveil.wav"></audio>
 <audio id="yatangaki" src="Yatangaki.wav"></audio>
+<audio id="gamo" src="minecraft.wav"></audio>
 
 <img src="https://risibank.fr/cache/stickers/d84/8427-full.jpg" onclick="lesquen()" style="cursor: pointer">
 
@@ -64,7 +65,7 @@ Utilisez sa capacité spéciale "Menteur, Pharisien" pour vous sortir d'une impa
 </div>
 
 <div id="lever" style="display: none;">
-<button style="margin-top: 500px; margin-left: 900px;  cursor: pointer;"  onclick="changefond()">Se lever</button>
+<button class="bouton" style="margin-top: 500px; margin-left: 900px;  cursor: pointer;"  onclick="changefond()">Se lever</button>
 
 </div>
 <div id="dialoginit" style="display: none"></div>
@@ -76,9 +77,9 @@ Utilisez sa capacité spéciale "Menteur, Pharisien" pour vous sortir d'une impa
 <audio id="sirene" src="sirene.wav"></audio>
 
 <div id="choix1" style="display: none;">
-<button id="sortir" onclick="sortir()" style="cursor: pointer">Aller voir ce qu'il se passe dehors.</button>
+<button id="sortir" class="bouton" onclick="sortir()" style="cursor: pointer">Aller voir ce qu'il se passe dehors.</button>
 
-<button id="rester" onclick="rester()" style="cursor: pointer">Rester à l'interieur et vérifier les actualités.</button>
+<button id="rester" class="bouton" onclick="rester()" style="cursor: pointer">Rester à l'interieur et vérifier les actualités.</button>
 </div>
 </div>
 
@@ -87,8 +88,8 @@ Utilisez sa capacité spéciale "Menteur, Pharisien" pour vous sortir d'une impa
 <div id="attaque" style="display: none;">
 <div id="dialog2"></div>
 <div id="choix2">
-<button id="aide" onclick="help()" style="cursor: pointer">Venir en aide au policier</button> 
-<button id="fuir" onclick="distraire()" style="cursor: pointer">Distraire l'attaquant avec le pavé MMA</button>
+<button id="aide" class="bouton" onclick="help()" style="cursor: pointer">Venir en aide au policier</button> 
+<button id="fuir" class="bouton" onclick="distraire()" style="cursor: pointer">Distraire l'attaquant avec le pavé MMA</button>
 </div>
 </div>
 
@@ -100,8 +101,8 @@ Utilisez sa capacité spéciale "Menteur, Pharisien" pour vous sortir d'une impa
 <progress id="advhealth" value="100" max="100"></progress>
 <img id="imgadv" src="hooded.png"> 
 <div id="attaques" style="display: none">
-<button id="spe" onclick="specialattackfail()" style="cursor: pointer">Ultimate (Dangereux) : Décapitation Yatangaki</button>
-<button id="simple" onclick="simpleattack()" style="cursor: pointer">Attaque Simple : Issou Punch</button></div> 
+<button id="spe" class="bouton" onclick="specialattackfail()" style="cursor: pointer">Ultimate (Dangereux) : Décapitation Yatangaki</button>
+<button id="simple" class="bouton" onclick="simpleattack()" style="cursor: pointer">Attaque Simple : Issou Punch</button></div> 
 <div id="myhealth" style="text-align: right">
 <progress id="health" value="20" max = "100"></progress>
 <div id="dialog4" style="display: none"></div>
@@ -112,21 +113,21 @@ Utilisez sa capacité spéciale "Menteur, Pharisien" pour vous sortir d'une impa
 <!-- CHOIX DISTRAIRE -->
 <div id="dialogmma" style="display: none"></div>
 <div id="choixmma" style="display: none">
-<button onclick="continuer()" style="cursor: pointer">Continuer</button> </div>
+<button onclick="continuer()" class="bouton" style="cursor: pointer">Continuer</button> </div>
 
 <!-- CHOIX CONTINUER -->
 <div id="dialog9" style="display: none"></div>
 <img id="larrypolice" src="policier.png" style="display: none">
 <div id="continue2" style="display: none">
-<button id="avancer" onclick="avance()" style="cursor: pointer">Avancer dans la rue</button>
+<button id="avancer" onclick="avance()" class="bouton" style="cursor: pointer">Avancer dans la rue</button>
 </div>
 
 <!-- CHOIX AVANCER RUELLE -->
 
 <div id="dialogruelle" style="display: none"></div>
 <div id="choixinter" style="display: none">
-<button id="parking" onclick="park()" style="cursor: pointer">Prendre sa voiture pour faire un constat de la situation en ville</button>
-<button id="retour" onclick="retour()" style="cursor: pointer">Retourner sur ses pas</button>
+<button id="parking" onclick="park()" class="bouton" style="cursor: pointer">Prendre sa voiture pour faire un constat de la situation en ville</button>
+<button id="retour" onclick="retour()" class="bouton" style="cursor: pointer">Retourner sur ses pas</button>
 </div>
 
 
@@ -134,13 +135,13 @@ Utilisez sa capacité spéciale "Menteur, Pharisien" pour vous sortir d'une impa
 
 <div id="gameover2" style="display: none">
 </div>
-<button id="gameov2" onclick="tryagain()" style="display: none; margin-left: 900px;">Rejouer</button>
+<button id="gameov2" onclick="tryagain()" class="bouton" style="display: none; margin-left: 900px;">Rejouer</button>
 
 <!-- PARKING -->
 <div id="dialogparking" style="display: none"></div>
 <div id="choixpark" style="display: none">
-<button id="carjack" onclick="carjack()" style="cursor: pointer">Essayer de voler un magnifique HUMMER ROUGER, UN HUMMER ROUGE BORDEL</button>
-<button id="etage" onclick="etage()" style="cursor: pointer">Vous avez pu vous tromper d'étage, descendre</button>
+<button id="carjack" onclick="carjack()" class="bouton" style="cursor: pointer">Essayer de voler un magnifique HUMMER ROUGER, UN HUMMER ROUGE BORDEL</button>
+<button id="etage" onclick="etage()" class="bouton" style="cursor: pointer">Vous avez pu vous tromper d'étage, descendre</button>
 </div>
 
 
@@ -152,33 +153,33 @@ Utilisez sa capacité spéciale "Menteur, Pharisien" pour vous sortir d'une impa
 
 <!-- ETAGE -->
 <div id="assomme" style="display: none"></div>
-<button id="lit" style="display: none" onclick="simpleattack()">Continuer</button>
+<button id="lit" style="display: none" class="bouton" onclick="simpleattack()">Continuer</button>
 
 <!-- CHOIX RESTER -->
 <div id="tv" style="display: none;">
 <div id="dialog3"></div>
 <div id="choix3" style="display: none">
-<button id="aide2" onclick="help()" style="cursor: pointer">Venir en aide au policier</button>
-<button id="barricade" onclick="barricader()" style="cursor: pointer">Se barricader</button>  
+<button id="aide2" onclick="help()" class="bouton" style="cursor: pointer">Venir en aide au policier</button>
+<button id="barricade" onclick="barricader()" class="bouton" style="cursor: pointer">Se barricader</button>  
 </div>
 </div>
 
 <!-- BARRICADER -->
 <div id="gameover1" style="display: none">
 </div>
-<button id="gameov" onclick="tryagain()" style="display: none; margin-left: 900px;">Rejouer</button>
+<button id="gameov" onclick="tryagain()" class="bouton" style="display: none; margin-left: 900px;">Rejouer</button>
 
 <!-- HOPITAL -->
 <div id="choix4" style="display: none">
-<button id="partir" onclick="partir()" style="cursor: pointer">Partir de la chambre d'hopital</button>
-<button id="repondre" onclick="repondre()" style="cursor: pointer">Demander où je suis</button>
+<button id="partir" onclick="partir()" class="bouton" style="cursor: pointer">Partir de la chambre d'hopital</button>
+<button id="repondre" onclick="repondre()" class="bouton" style="cursor: pointer">Demander où je suis</button>
 </div>
 
 
 <!-- CONVERSATION DOCTEUR -->
 
 <div id="dialogdoc" style="display: none"></div>
-<button id="versfin2" style="display: none" onclick="facelessend()">Se lever, remercier le docteur et s'en aller</button>
+<button id="versfin2" style="display: none" class="bouton" onclick="facelessend()">Se lever, remercier le docteur et s'en aller</button>
 
 
 <!-- FIN ALTERNATIVE SAINTE CHANCLA -->
@@ -186,16 +187,16 @@ Utilisez sa capacité spéciale "Menteur, Pharisien" pour vous sortir d'une impa
 <div id="finencours2" style="display: none"></div>
 <img src="hooded.png" id="hooded" style="display: none">
 <div id="choixfindoc" style="display: none">
-<button id="saintechancla" onclick="saintechancla()" style="cursor: pointer">J'utilise ma capacité Sainte Chancla</button>
-<button id="fuite" onclick="retour()" style="cursor: pointer">Fuir le combat</button> 
+<button id="saintechancla" class="bouton" onclick="saintechancla()" style="cursor: pointer">J'utilise ma capacité Sainte Chancla</button>
+<button id="fuite" class="bouton" onclick="retour()" style="cursor: pointer">Fuir le combat</button> 
 </div>
 
 <!-- COULOIR HOPITAL -->
 <div id="hosto" style="display: none;">
 <div id="dialog7"></div>
 <div id="choix5">
-<button id="porterarm" onclick="porterarm()" style="cursor: pointer">Enfiler l'armure</button>
-<button id="sansarm" onclick="sansarm()" style="cursor: pointer">Pas besoin d'armure et d'épée, continuer sans</button>  
+<button id="porterarm" onclick="porterarm()" class="bouton" style="cursor: pointer">Enfiler l'armure</button>
+<button id="sansarm" onclick="sansarm()" class="bouton" style="cursor: pointer">Pas besoin d'armure et d'épée, continuer sans</button>  
 </div>
 <img src="armour.png" id="armour">
 </div>
@@ -208,8 +209,8 @@ Utilisez sa capacité spéciale "Menteur, Pharisien" pour vous sortir d'une impa
     <img src="adv.png" id="adv"> 
     <div id="dialog8"></div>
     <div id="attaques">
-    <button id="spe" onclick="specialattack()" style="cursor: pointer">Ultimate : Décapitation Yatangaki</button>
-    <button id="simple" onclick="attack()" style="cursor: pointer">Attaque Simple : Issou Punch</button></div> 
+    <button id="spe" onclick="specialattack()" class="bouton" style="cursor: pointer">Ultimate : Décapitation Yatangaki</button>
+    <button id="simple" onclick="attack()" class="bouton" style="cursor: pointer">Attaque Simple : Issou Punch</button></div> 
     <div id="myfhealth" style="text-align: right">
     <progress id="myfinalhealth" value="100" max = "100" style="margin-right: 900px;"></progress>
 </div>
@@ -219,19 +220,19 @@ Utilisez sa capacité spéciale "Menteur, Pharisien" pour vous sortir d'une impa
 
 <!-- VERS LA FIN -->
 <div id="dialog10" style="display: none"></div>
-<button id="versfin" onclick="versfin()" style="cursor: pointer; display: none;" >Continuer son avancée</button>
+<button id="versfin" onclick="versfin()" class="bouton" style="cursor: pointer; display: none;" >Continuer son avancée</button>
 
 <img src="hooded.png" style="display: none; margin-left: 600px; margin-top: 750px; width: 500px;" id="hood"> 
 
 <!-- FIN -->
 <div id="chancla" style="display: none"></div>
-<button id="finalbutton" style="display: none; cursor: pointer;" onclick="fin()">S'approcher du sans visage.</button>
+<button id="finalbutton" class="bouton" style="display: none; cursor: pointer;" onclick="fin()">S'approcher du sans visage.</button>
 <div id="finaldialog" style="display: none"></div>
 <img src="visagefin.png" id="visage" style="display: none">
-<button style="display: none;cursor: pointer;" id="specialfin" onclick="saintechancla()">Yatangaki ULTIME</button>
+<button style="display: none;cursor: pointer;" class="bouton" id="specialfin" onclick="saintechancla()">Yatangaki ULTIME</button>
 
 
-<button id="continuefin" style="display: none;cursor: pointer" onclick="continuefin()">Continuer</button>
+<button id="continuefin" style="display: none;cursor: pointer" class="bouton" onclick="continuefin()">Continuer</button>
 <div id="lastdialog" style="display: none"></div>
 
 </body>

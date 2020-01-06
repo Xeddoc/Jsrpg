@@ -528,6 +528,17 @@ width: 500px;}
     background-color: brown;
 }
 
+.bouton {
+	padding:6px 0 6px 0;
+	font:bold 13px Arial;
+	background:#f5f5f5;
+	color:#555;
+	border-radius:2px;
+	width:200px;
+	border:1px solid #ccc;
+	box-shadow:1px 1px 3px #999;
+    font-size: 30px
+}
 #adv2health {
     position: absolute;
     margin-top: 40px;

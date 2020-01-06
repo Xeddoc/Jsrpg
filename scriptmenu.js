@@ -738,6 +738,9 @@ function sansarm() {
                 createDiag( individual );    
 
 
+
+
+
 }
 
 
@@ -855,8 +858,10 @@ function specialattack() {
                 createDiag( individual );
 
                 $('#versfin').show();
+            
 
         }
+
 
 }
 
@@ -1075,6 +1080,8 @@ function retour() {
 
 
             createDiag( individual );    
+let audio = document.getElementById("gamo");
+            audio.play();
       
 
 
