@@ -53,17 +53,21 @@ Utilisez sa capacité spéciale "Menteur, Pharisien" pour vous sortir d'une impa
 </div>
 
 <div id="pagejeu" style="display: none">
-<h2 style="position: absolute; z-index: 10; margin-left: 650px;">Votre réveil sonne.</h2>
+<!--<h2 style="position: absolute; z-index: 10; margin-left: 650px;">Votre réveil sonne.</h2>-->
+
+
 <!--<p id="charaname"></p> -->
 
 
 
 
 </div>
+
 <div id="lever" style="display: none;">
 <button style="margin-top: 500px; margin-left: 900px;  cursor: pointer;"  onclick="changefond()">Se lever</button>
-</div>
 
+</div>
+<div id="dialoginit" style="display: none"></div>
 
 <div id="citation" style="display: none;">
 <!--<h2 style="color: red; margin-top: 600px;">Les héros vivent à travers leurs victoires mais naissent de leurs échecs.</h2> -->
@@ -138,6 +142,8 @@ Utilisez sa capacité spéciale "Menteur, Pharisien" pour vous sortir d'une impa
 <button id="carjack" onclick="carjack()" style="cursor: pointer">Essayer de voler un magnifique HUMMER ROUGER, UN HUMMER ROUGE BORDEL</button>
 <button id="etage" onclick="etage()" style="cursor: pointer">Vous avez pu vous tromper d'étage, descendre</button>
 </div>
+
+
 
 
 <!-- HUMMER ROUGE -->
@@ -225,6 +231,8 @@ Utilisez sa capacité spéciale "Menteur, Pharisien" pour vous sortir d'une impa
 <button style="display: none;cursor: pointer;" id="specialfin" onclick="saintechancla()">Yatangaki ULTIME</button>
 
 
+<button id="continuefin" style="display: none" onclick="continuefin()">Continuer</button>
+<div id="lastdialog" style="display: none"></div>
 
 </body>
     

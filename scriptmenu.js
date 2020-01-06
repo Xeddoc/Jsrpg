@@ -22,7 +22,7 @@ function lesquen() {
         setTimeout(function() { $("#loader").fadeOut(400); }, 400)
 
     });
-    alert("Arrive Bientôt!");
+    alert("Arrive Bientôt! Selection par defaut de Risitas");
 };
 
 function risitas() {
@@ -67,7 +67,7 @@ function jawa() {
 
     });
     
-    alert("Arrive Bientôt!");
+    alert("Arrive Bientôt! Selection par defaut de Risitas");
       
 
 } ;
@@ -91,7 +91,7 @@ function sardoche() {
     setTimeout(function() { $("#loader").fadeOut(400); }, 400)
 
     });
-    alert("Arrive Bientôt!");
+    alert("Arrive Bientôt! Selection par defaut de Risitas");
 
 };
 
@@ -101,7 +101,57 @@ function test() {
 window.open("sardoche.html")
 }; */
 
- let bg = $("#character-box").css('background-image');
+setTimeout(function(){
+           $('#dialoginit').show();
+        }, 1000);
+
+
+     
+     let dialogs = ['Votre reveil sonne! La victoire la plus importante de toutes est celle remportée sur soi-même.'],  
+        initial = 0;
+        individual = dialogs[initial].split('');
+
+    function createDiag ( dialog ) {
+
+      for(i = 0; i < dialog.length; i++) {
+        (function(i){
+
+          setTimeout(function(){
+            $('#dialoginit').text($('#dialoginit').text() +   dialog[i]);
+          }, 50*i);  
+
+        }(i));
+
+      }
+
+    }
+
+    createDiag( individual );
+
+alert("Vous avez choisi RISITAS, sélection par défaut");
+
+        $(function() {
+        setTimeout(function() { $("#page1").fadeOut(200); }, 200)
+
+        });
+
+        let audio = document.getElementById("reveil");
+           audio.play();
+
+        setTimeout(function(){
+           $('#pagejeu').show();
+        }, 1000);
+        setTimeout(function(){
+           $('#lever').show();
+        }, 8000);
+
+
+
+        document.body.style.backgroundImage='url("reveil.png")'
+        let charaname = "Risitas";
+        document.getElementById("charaname").innerHTML = charaname;
+
+ /*let bg = $("#character-box").css('background-image');
  bg = bg.replace('url("','').replace('")','');
 
        
@@ -118,36 +168,42 @@ window.open("sardoche.html")
  if (bg === 'https://risibank.fr/cache/stickers/d5/570-full.jpg') {
         alert("Vous avez choisi RISITAS");
 
-$(function() {
-setTimeout(function() { $("#page1").fadeOut(200); }, 200)
+        $(function() {
+        setTimeout(function() { $("#page1").fadeOut(200); }, 200)
 
-});
+        });
 
-let audio = document.getElementById("reveil");
-   audio.play();
+        let audio = document.getElementById("reveil");
+           audio.play();
 
-setTimeout(function(){
-   $('#pagejeu').show();
-}, 1000);
-setTimeout(function(){
-   $('#lever').show();
-}, 8000);
-
-document.body.style.backgroundImage='url("reveil.png")'
-let charaname = "Risitas";
-document.getElementById("charaname").innerHTML = charaname;
+        setTimeout(function(){
+           $('#pagejeu').show();
+        }, 1000);
+        setTimeout(function(){
+           $('#lever').show();
+        }, 8000);
 
 
 
+        document.body.style.backgroundImage='url("reveil.png")'
+        let charaname = "Risitas";
+        document.getElementById("charaname").innerHTML = charaname;
 
-
-
- }
-
- if (bg === 'https://risibank.fr/cache/stickers/d84/8427-full.jpg') {
+      if (bg === 'https://risibank.fr/cache/stickers/d84/8427-full.jpg') {
         alert("Vous avez choisi HENRY DE LESQUEN");
  }
-}
+
+
+
+
+*/
+ }
+
+
+
+
+
+
 
 
 
@@ -169,7 +225,7 @@ function changefond() {
     }, 1200);
 
     document.body.style.backgroundImage='url("chambre.jpg")'
-
+    $('#dialoginit').fadeOut();
 
 
     // DIALOGUE
@@ -579,9 +635,10 @@ function fin() {
     $("#specialfin").fadeOut(100);
     $("#visage").show(2000);
     $("#finaldialog").show(100);
+    $("#continuefin").show(5000);
     
 
-    let dialogs = ['Cet individu déclare : La victoire la plus importante de toutes est celle remportée sur soi-même. Le sans visage porte votre visage!'],  
+    let dialogs = ['L ombre disparait sur le visage du "sans visage". Il porte votre visage!'],  
             initial = 0;
             individual = dialogs[initial].split('');
 
@@ -602,6 +659,8 @@ function fin() {
 
 
         createDiag( individual );
+
+
 
 }
 
@@ -1332,7 +1391,42 @@ setTimeout(function(){
 }
 
 
+//ECRAN DE FIN
 
+function continuefin() {
+    
+     $('#lastdialog').show();
+     $('#visage').fadeOut();
+     $('#finaldialog').fadeOut();
+document.body.style.backgroundImage='url("reveil.png")';
+
+let audio = document.getElementById("reveil");
+   audio.play();
+
+    let dialogs = ['Votre reveil sonne! La victoire la plus importante de toutes est celle remportée sur soi-même.'],  
+                initial = 0;
+                individual = dialogs[initial].split('');
+
+
+            function createDiag ( dialog ) {
+
+              for(i = 0; i < dialog.length; i++) {
+                (function(i){
+
+                  setTimeout(function(){
+                    $('#lastdialog').text($('#lastdialog').text() +   dialog[i]);
+                  }, 50*i);  
+
+                }(i));
+
+              }
+
+            }
+
+
+            createDiag( individual ); 
+     
+}
 
 //REJOUER 
 

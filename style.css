@@ -486,6 +486,38 @@ margin-left: 500px;
   width: 700px;
 }
 
+#lastdialog {
+  height: 160px;
+  background: #1c1c1c;
+  border-radius: 5px;
+  box-shadow: 0 0 0 6px #F5EAC8, 0 0 0 12px #251C00;
+  color: #F5EAC8;
+  font-family: Arial;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px 20px 20px 20px;
+  position: relative;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  width: 700px;
+}
+
+#dialoginit {
+  height: 160px;
+  background: #1c1c1c;
+  border-radius: 5px;
+  box-shadow: 0 0 0 6px #F5EAC8, 0 0 0 12px #251C00;
+  color: #F5EAC8;
+  font-family: Arial;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px 20px 20px 20px;
+  position: relative;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  width: 700px;
+}
+
 #imgadv {
 width: 500px;}
 
