@@ -22,72 +22,76 @@ function lesquen() {
         setTimeout(function() { $("#loader").fadeOut(400); }, 400)
 
     });
+    alert("Arrive Bientôt!");
 };
 
 function risitas() {
-  document.getElementById("character-box").style.backgroundImage = "url('https://risibank.fr/cache/stickers/d5/570-full.jpg')";
+      document.getElementById("character-box").style.backgroundImage = "url('https://risibank.fr/cache/stickers/d5/570-full.jpg')";
 
-let audio = document.getElementById("select");
-   audio.play();
+    let audio = document.getElementById("select");
+       audio.play();
 
-document.getElementById("descriptionlesquen").style.display = "none";
-document.getElementById("descriptionjawa").style.display = "none";
-document.getElementById("descriptionsardoche").style.display = "none";
+    document.getElementById("descriptionlesquen").style.display = "none";
+    document.getElementById("descriptionjawa").style.display = "none";
+    document.getElementById("descriptionsardoche").style.display = "none";
 
-setTimeout(function(){
-   $('#descriptionrisitas').show();
-}, 800);
-setTimeout(function(){
-   $('#continue').show();
-}, 800);
-document.getElementById("loader").style.display = ""
-$(function() {
-setTimeout(function() { $("#loader").fadeOut(400); }, 400)
+    setTimeout(function(){
+       $('#descriptionrisitas').show();
+    }, 800);
+    setTimeout(function(){
+       $('#continue').show();
+    }, 800);
+    document.getElementById("loader").style.display = ""
+    $(function() {
+    setTimeout(function() { $("#loader").fadeOut(400); }, 400)
 
-});
+    });
 };
 
-  function jawa() {
-  document.getElementById("character-box").style.backgroundImage = "url('https://images-na.ssl-images-amazon.com/images/I/91LGV9QfnuL._SY550_.jpg')";
-let audio = document.getElementById("select");
-   audio.play();
-document.getElementById("descriptionlesquen").style.display = "none";
-document.getElementById("descriptionsardoche").style.display = "none";
-document.getElementById("descriptionrisitas").style.display = "none";
-setTimeout(function(){
-   $('#descriptionjawa').show();
-}, 800);
-setTimeout(function(){
-   $('#continue').show();
-}, 800);
-document.getElementById("loader").style.display = ""
-$(function() {
-setTimeout(function() { $("#loader").fadeOut(400); }, 400)
+function jawa() {
+      document.getElementById("character-box").style.backgroundImage = "url('https://images-na.ssl-images-amazon.com/images/I/91LGV9QfnuL._SY550_.jpg')";
+    let audio = document.getElementById("select");
+       audio.play();
+    document.getElementById("descriptionlesquen").style.display = "none";
+    document.getElementById("descriptionsardoche").style.display = "none";
+    document.getElementById("descriptionrisitas").style.display = "none";
+    setTimeout(function(){
+       $('#descriptionjawa').show();
+    }, 800);
+    setTimeout(function(){
+       $('#continue').show();
+    }, 800);
+    document.getElementById("loader").style.display = ""
+    $(function() {
+    setTimeout(function() { $("#loader").fadeOut(400); }, 400)
 
-});
+    });
+    
+    alert("Arrive Bientôt!");
+      
 
 } ;
 
 function sardoche() {
-document.getElementById("character-box").style.backgroundImage = "url('https://risibank.fr/cache/stickers/d1578/157805-full.png')";
-let audio = document.getElementById("select");
-audio.play();
+    document.getElementById("character-box").style.backgroundImage = "url('https://risibank.fr/cache/stickers/d1578/157805-full.png')";
+    let audio = document.getElementById("select");
+    audio.play();
 
-document.getElementById("descriptionlesquen").style.display = "none";
-document.getElementById("descriptionjawa").style.display = "none";
-document.getElementById("descriptionrisitas").style.display = "none";
-setTimeout(function(){
-   $('#descriptionsardoche').show();
-}, 800);
-setTimeout(function(){
-   $('#continue').show();
-}, 800);
-document.getElementById("loader").style.display = ""
-$(function() {
-setTimeout(function() { $("#loader").fadeOut(400); }, 400)
+    document.getElementById("descriptionlesquen").style.display = "none";
+    document.getElementById("descriptionjawa").style.display = "none";
+    document.getElementById("descriptionrisitas").style.display = "none";
+    setTimeout(function(){
+       $('#descriptionsardoche').show();
+    }, 800);
+    setTimeout(function(){
+       $('#continue').show();
+    }, 800);
+    document.getElementById("loader").style.display = ""
+    $(function() {
+    setTimeout(function() { $("#loader").fadeOut(400); }, 400)
 
-});
-
+    });
+    alert("Arrive Bientôt!");
 
 };
 
@@ -526,15 +530,16 @@ function repondre() {
 //Sainte Chancla
 
 function saintechancla() {
-    document.body.style.backgroundImage='url("hop5.jpg)' 
+    document.body.style.backgroundImage='url("hop5.jpg")' 
     
     $("#hooded").fadeOut(100);
     $("#finencours2").fadeOut(100);
     $("#choixfindoc").fadeOut(100);
 
     $("#chancla").show(100);
+    $("#finalbutton").show(100);
     
-    let dialogs = ['Le sans visage est projetté au sol, ses points de vie sont réduits à 0, mais il semble se relever.'],  
+    let dialogs = ['Le sans visage est projeté au sol, ses points de vie sont réduits à 0, mais il semble se relever.'],  
             initial = 0;
             individual = dialogs[initial].split('');
 
@@ -555,7 +560,46 @@ function saintechancla() {
 
 
         createDiag( individual );
+
     
+}
+
+//FIN
+
+function fin() {
+    
+    document.body.style.backgroundImage='url("hop5.jpg")' 
+    $("#finalbutton").fadeOut(100);
+    $("#chancla").fadeOut(100);
+    $("#hooded").fadeOut(100);
+    $("#finencours2").fadeOut(100);
+    $("#specialfin").fadeOut(100);
+    $("#visage").show(2000);
+    $("#finaldialog").show(100);
+    
+
+    let dialogs = ['Cet individu déclare : La victoire la plus importante de toutes est celle remportée sur soi-même. Le sans visage porte votre visage!'],  
+            initial = 0;
+            individual = dialogs[initial].split('');
+
+        function createDiag ( dialog ) {
+
+          for(i = 0; i < dialog.length; i++) {
+            (function(i){
+
+              setTimeout(function(){
+                $('#finaldialog').text($('#finaldialog').text() +   dialog[i]);
+              }, 50*i);  
+
+            }(i));
+
+          }
+
+        }
+
+
+        createDiag( individual );
+
 }
 
 
@@ -595,6 +639,45 @@ function porterarm() {
 
 }
 
+//SANS ARMURE
+
+function sansarm() {
+
+    document.body.style.backgroundImage='url("gameover.jpg")'
+        
+        $('#hosto').fadeOut();
+        setTimeout(function(){
+                   $('#gameov2').show();
+                }, 1500);
+        setTimeout(function(){
+                   $('#gameover2').show();
+                }, 200);
+        
+        let dialogs = ['Perdu.. Votre excès de confiance vous perdra.'],  
+                    initial = 0;
+                    individual = dialogs[initial].split('');
+
+                function createDiag ( dialog ) {
+
+                  for(i = 0; i < dialog.length; i++) {
+                    (function(i){
+
+                      setTimeout(function(){
+                        $('#gameover2').text($('#gameover2').text() +   dialog[i]);
+                      }, 50*i);  
+
+                    }(i));
+
+                  }
+
+                }
+
+
+                createDiag( individual );    
+
+
+}
+
 
 function attack() {
 
@@ -605,7 +688,7 @@ function attack() {
     adv2health.value -= 20; 
 
     setTimeout(function(){let myhealth = document.getElementById("myfinalhealth")
-    myhealth.value -= 30;}, 200);
+    myhealth.value -= 30;}, 100);
 
 
         if (adv2health.value == 0) {
@@ -1161,6 +1244,38 @@ function versfin() {
             }, 21500);
 
 
+    setTimeout(function(){
+               $('#specialfin').show();
+            }, 22000); 
+    
+     setTimeout(function(){
+               $('#finencours2').show();
+            }, 22000); 
+
+    
+
+    let dialogs = ['Un sans visage arrive et vous attaque devant la sortie de l hopital'],  
+                initial = 0;
+                individual = dialogs[initial].split('');
+
+            function createDiag ( dialog ) {
+
+              for(i = 0; i < dialog.length; i++) {
+                (function(i){
+
+                  setTimeout(function(){
+                    $('#finencours2').text($('#finencours2').text() +   dialog[i]);
+                  }, 50*i);  
+
+                }(i));
+
+              }
+
+            }
+
+
+            createDiag( individual ); 
+
     
 
 
@@ -1214,13 +1329,7 @@ setTimeout(function(){
 }
 
 
-//FIN
 
-function fin() {
-
-document.body.style.backgroundImage='url("")';
-
-}
 
 //REJOUER 
 

@@ -470,6 +470,22 @@ margin-left: 500px;
   width: 700px;
 }
 
+#finaldialog {
+  height: 160px;
+  background: #1c1c1c;
+  border-radius: 5px;
+  box-shadow: 0 0 0 6px #F5EAC8, 0 0 0 12px #251C00;
+  color: #F5EAC8;
+  font-family: Arial;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px 20px 20px 20px;
+  position: relative;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  width: 700px;
+}
+
 #imgadv {
 width: 500px;}
 
@@ -526,7 +542,8 @@ margin-left: 800px;}
 
 #choixmma {
 margin-top: 400px;
-margin-left: 800px;}
+margin-left: 800px;
+}
 
 #lit {
 margin-top: 400px;
@@ -543,6 +560,15 @@ margin-left: 800px;}
 #choixfindoc {
 margin-left: 1000px;}
 
+#finalbutton {
+margin-left: 1000px;}
+
 #hooded {
 width: 500px;
+}
+
+#specialfin {
+    float: left;
+    margin-left: 1400px;
+    margin-top: -1000px;
 }
