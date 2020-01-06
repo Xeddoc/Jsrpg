@@ -122,7 +122,7 @@ Utilisez sa capacité spéciale "Menteur, Pharisien" pour vous sortir d'une impa
 <div id="dialogruelle" style="display: none"></div>
 <div id="choixinter" style="display: none">
 <button id="parking" onclick="park()" style="cursor: pointer">Prendre sa voiture pour faire un constat de la situation en ville</button>
-<button id="retour" onclick="retour()" style="cursor: pointer">retourner sur ses pas</button>
+<button id="retour" onclick="retour()" style="cursor: pointer">Retourner sur ses pas</button>
 </div>
 
 
@@ -172,7 +172,17 @@ Utilisez sa capacité spéciale "Menteur, Pharisien" pour vous sortir d'une impa
 <!-- CONVERSATION DOCTEUR -->
 
 <div id="dialogdoc" style="display: none"></div>
+<button id="versfin2" style="display: none" onclick="facelessend()">Se lever, remercier le docteur et s'en aller</button>
 
+
+<!-- FIN ALTERNATIVE SAINTE CHANCLA -->
+
+<div id="finencours2" style="display: none"></div>
+<img src="hooded.png" id="hooded" style="display: none">
+<div id="choixfindoc" style="display: none">
+<button id="saintechancla" onclick="saintechancla()" style="cursor: pointer">J'utilise ma capacité Sainte Chancla</button>
+<button id="fuite" onclick="retour()" style="cursor: pointer">Fuir le combat</button> 
+</div>
 
 <!-- COULOIR HOPITAL -->
 <div id="hosto" style="display: none;">
@@ -195,7 +205,7 @@ Utilisez sa capacité spéciale "Menteur, Pharisien" pour vous sortir d'une impa
     <button id="spe" onclick="specialattack()" style="cursor: pointer">Ultimate : Décapitation Yatangaki</button>
     <button id="simple" onclick="attack()" style="cursor: pointer">Attaque Simple : Issou Punch</button></div> 
     <div id="myfhealth" style="text-align: right">
-    <progress id="myfinalhealth" value="100" max = "100"></progress>
+    <progress id="myfinalhealth" value="100" max = "100" style="margin-right: 900px;"></progress>
 </div>
 </div>
 
@@ -203,11 +213,13 @@ Utilisez sa capacité spéciale "Menteur, Pharisien" pour vous sortir d'une impa
 
 <!-- VERS LA FIN -->
 <div id="dialog10" style="display: none"></div>
-<button id="versfin" onclick="versfin()" style="cursor: pointer; display: none;">Continuer son avancée</button>
+<button id="versfin" onclick="versfin()" style="cursor: pointer; display: none;" >Continuer son avancée</button>
 
-<img src="hooded.png" style="display: none; margin-left: 500px; margin-top: 500px; width: 500px;" id="hook"> 
+<img src="hooded.png" style="display: none; margin-left: 600px; margin-top: 750px; width: 500px;" id="hood"> 
 
-
+<!-- FIN -->
+<button id="finalbutton" style="display: none; cursor: pointer;" onclick="fin()">S'approcher du sans visage.</button>
+<div id="chancla" style="display: none"></div>
 
 
 </body>

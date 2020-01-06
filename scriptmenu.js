@@ -439,7 +439,7 @@ function simpleattack() {
 //HOPITAL 
 
 
-//FUIR
+//PARTIR
 
 function partir() {
 document.body.style.backgroundImage='url("hop.jpg")'   
@@ -487,7 +487,10 @@ function repondre() {
     document.body.style.backgroundImage='url("10.jpg")'
     
     $("#choix4").fadeOut(100);
-    $("#dialogdoc").fadeOut(100);
+    $("#dialogdoc").show(100);
+
+    $("#versfin2").show(3000);
+
     
 
     let dialogs = ['Vous avez été retrouvé inconscient. Le docteur vous restaure votre vie et vous donne une nouvelle capacité ultime : SAINTE CHANCLA'],  
@@ -514,7 +517,45 @@ function repondre() {
 
     
 
+    
 
+
+}
+
+
+//Sainte Chancla
+
+function saintechancla() {
+    document.body.style.backgroundImage='url("hop5.jpg)' 
+    
+    $("#hooded").fadeOut(100);
+    $("#finencours2").fadeOut(100);
+    $("#choixfindoc").fadeOut(100);
+
+    $("#chancla").show(100);
+    
+    let dialogs = ['Le sans visage est projetté au sol, ses points de vie sont réduits à 0, mais il semble se relever.'],  
+            initial = 0;
+            individual = dialogs[initial].split('');
+
+        function createDiag ( dialog ) {
+
+          for(i = 0; i < dialog.length; i++) {
+            (function(i){
+
+              setTimeout(function(){
+                $('#chancla').text($('#chancla').text() +   dialog[i]);
+              }, 50*i);  
+
+            }(i));
+
+          }
+
+        }
+
+
+        createDiag( individual );
+    
 }
 
 
@@ -856,7 +897,10 @@ function park() {
 function retour() {
     $("#dialogruelle").fadeOut(100);
     $("#choixinter").fadeOut(100);
+    $("#finencours2").fadeOut(100);
+    $("#choixfindoc").fadeOut(100);
 
+    document.body.style.backgroundImage='url("gameover.jpg")'
 
     setTimeout(function(){
                $('#gameov2').show();
@@ -1081,7 +1125,7 @@ function versfin() {
                     }, 19500);
 
     setTimeout(function(){
-               $('#hook').show();
+               $('#hood').show();
             }, 19500);
 
     setTimeout(function(){
@@ -1089,7 +1133,7 @@ function versfin() {
                     }, 20000);
 
     setTimeout(function(){
-               $('#hook').fadeOut();
+               $('#hood').fadeOut();
             }, 19950);
 
     setTimeout(function(){
@@ -1097,7 +1141,7 @@ function versfin() {
                     }, 20500);
 
     setTimeout(function(){
-               $('#hook').show();
+               $('#hood').show();
             }, 20500);
 
     setTimeout(function(){
@@ -1105,7 +1149,7 @@ function versfin() {
                     }, 21000);
 
     setTimeout(function(){
-               $('#hook').fadeOut();
+               $('#hood').fadeOut();
             }, 20950);
 
     setTimeout(function(){
@@ -1113,7 +1157,7 @@ function versfin() {
                     }, 21500);
 
     setTimeout(function(){
-               $('#hook').show();
+               $('#hood').show();
             }, 21500);
 
 
@@ -1124,8 +1168,59 @@ function versfin() {
 
 
 
+function facelessend() {
 
 
+    document.body.style.backgroundImage='url("hop5.jpg")';
+     $('#versfin2').fadeOut();
+     $('#dialogdoc').fadeOut();
+     $('#finencours2').show();
+
+    setTimeout(function(){
+               $('#choixfindoc').show();
+            }, 2000); 
+
+    
+
+    let dialogs = ['Un sans visage arrive et vous attaque devant la sortie de l hopital'],  
+                initial = 0;
+                individual = dialogs[initial].split('');
+
+            function createDiag ( dialog ) {
+
+              for(i = 0; i < dialog.length; i++) {
+                (function(i){
+
+                  setTimeout(function(){
+                    $('#finencours2').text($('#finencours2').text() +   dialog[i]);
+                  }, 50*i);  
+
+                }(i));
+
+              }
+
+            }
+
+
+            createDiag( individual );   
+
+setTimeout(function(){
+               $('#hooded').show();
+            }, 1500); 
+
+
+    
+    
+}
+
+
+//FIN
+
+function fin() {
+
+document.body.style.backgroundImage='url("")';
+
+}
 
 //REJOUER 
 

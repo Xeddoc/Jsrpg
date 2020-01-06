@@ -438,8 +438,40 @@ margin-left: 500px;
   width: 700px;
 }
 
+#finencours2 {
+  height: 160px;
+  background: #1c1c1c;
+  border-radius: 5px;
+  box-shadow: 0 0 0 6px #F5EAC8, 0 0 0 12px #251C00;
+  color: #F5EAC8;
+  font-family: Arial;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px 20px 20px 20px;
+  position: relative;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  width: 700px;
+}
+
+#chancla {
+  height: 160px;
+  background: #1c1c1c;
+  border-radius: 5px;
+  box-shadow: 0 0 0 6px #F5EAC8, 0 0 0 12px #251C00;
+  color: #F5EAC8;
+  font-family: Arial;
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px 20px 20px 20px;
+  position: relative;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  width: 700px;
+}
+
 #imgadv {
-width: 700px;}
+width: 500px;}
 
 #advhealth {
     position: absolute;
@@ -460,12 +492,12 @@ margin-right: 400px;
 }
 
 #adversaire {
-margin-top: 200px
+margin-top: 500px
 }
 
 #attaques {
 margin-left: 1300px;
-margin-top: -300px;
+
 }
 
 #armour {
@@ -504,3 +536,13 @@ margin-left: 800px;}
 margin-top: 400px;
 margin-left: 800px;}
 
+#versfin2 {
+margin-top: 400px;
+margin-left: 800px;}
+
+#choixfindoc {
+margin-left: 1000px;}
+
+#hooded {
+width: 500px;
+}
